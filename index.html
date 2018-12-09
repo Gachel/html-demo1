@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initail-width=1.0, minimum-scale=1">
+<title>Profile Examples</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+    <div class="main">
+        <div class="profile">
+            <div class="left">
+                <div class="avatar">
+                    <img src="images/avatar.jpg">
+                    <span class="state online">online</span>
+                </div>
+            </div>
+            <div class="right">
+                <h3>matteo marcon</h3>
+                <p class="gray">student</p>
+                <div class="address">American</div>
+                <p class="gray">137 W San Bernardino Rd.</p>
+            </div>
+            <p class="intro">
+                This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron.
+            </p>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="">
+                    <img class="icon" src="images/icon_01.png">
+                    <h5>lessons</h5>
+                </a>
+            </li>
+            <li>
+                <a id="btn-exam" href="">
+                    <img class="icon" src="images/icon_02.png">
+                    <h5>exams</h5>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="icon" src="images/icon_03.png">
+                    <h5>service</h5>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img class="icon" src="images/icon_04.png">
+                    <h5>traffic</h5>
+                </a>
+            </li>
+            <li class="add">
+                <a class="btn" href="login.html">
+                    +
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="pg_exams">
+    <a class="back">back</a>
+    <h2>Exams</h2>
+    <select>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+    </select>
+    <ul class="examlist">
+        <li>
+            <div class="datetime">24/05</div>
+            <div class="box">
+                <h5>数学和代数</h5>
+                <ul class="userlist">
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>+11</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="datetime">24/05</div>
+            <div class="box">
+                <h5>数学和代数</h5>
+                <ul class="userlist">
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>+11</li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <div class="datetime">24/05</div>
+            <div class="box">
+                <h5>数学和代数</h5>
+                <ul class="userlist">
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>
+                        <img src="http://img.hb.aicdn.com/1b91030a896edc6b89f0902bae3c7f9b085328e739d3-JuCqzQ_fw658">
+                    </li>
+                    <li>+11</li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+$('#btn-exam').click(function(){
+    $('.pg_exams').addClass('show');
+    setTimeout(function() {
+        $('.wrap').addClass('active');
+    }, 250)
+    return false;
+});
+$('.back').click(function(){
+    $('.pg_exams').removeClass('show');
+    $('.wrap').removeClass('active');
+});
+</script>
+</body>
+</html>
